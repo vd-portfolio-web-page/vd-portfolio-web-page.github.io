@@ -34,6 +34,9 @@ body {
   background: #222222;
   width: 100%;
   text-align: center; }
+  @media screen and (max-width: 730px) {
+    .mobile-bar {
+      display: none; } }
   .mobile-bar .mobile-bar-item {
     width: 100%;
     height: 100%;

@@ -5,8 +5,13 @@
           } else {
             $('.mobile-bar')[0].style.display='none'
           }
-        })
+        });
 
+        window.addEventListener('resize', function(){
+          if (window.matchMedia("screen and (min-width: 730px)").matches==true) {
+            $('.mobile-bar')[0].style.display='none'
+          }
+        });
 
         $(".scrollto").click(function() {
          var elementClick = $(this).attr("href")
