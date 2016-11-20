@@ -17,7 +17,6 @@ html
 			#arrow-bottom(class="arrow")
 				a(href="#about-me" id="to-down" class="scrollto")
 					i(class="fa fa-arrow-circle-down" aria-hidden="true")
-		input( id="sub-menu" type="checkbox" value="" name="type-me")
 		.header_label(id="header_label")
 			.header_left_bar
 				.round
@@ -47,26 +46,26 @@ html
 				.header_item
 					a(href="#my-contacts", title="invite Vitaliy" class="scrollto") Invite me
 			.header_nav_bar
-				label(for="sub-menu" id="switch-mobile-menu")
+				button( class="button_for_menu" type="button" aria-controls="nav")
 					svg(width="30", height="23", viewBox="0 0 30 23", xmlns="http://	www.w3.org/2000/svg", id="menu")
 						g(fill="white")
 							path(d="M0 0h30v3h-30z")
 							path(d="M0 10h30v3h-30z")
 							path(d="M0 20h30v3h-30z")
-		.mobile-bar
-			.mobile-bar-item
+		ul(class='mobile-bar menu' id="nav")
+			li.mobile-bar-item
 				a(href="#middle" class="scrollto")
 					| About
-			.mobile-bar-item
+			li.mobile-bar-item
 				a(href="#content-content" class="scrollto")
 					| Portfolio
-			.mobile-bar-item
+			li.mobile-bar-item
 				a(href="#my-contacts" class="scrollto")
 					| Contacts
-			.mobile-bar-item
+			li.mobile-bar-item
 				a(href="#my-background" class="scrollto")
 					| Background
-			.mobile-bar-item
+			li.mobile-bar-item
 				a(href="#my-contacts" class="scrollto")
 					| Invite me
 
